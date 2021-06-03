@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled/constants/firebase.dart';
 import 'package:untitled/models/user.dart';
-import 'package:untitled/screens/admin.dart';
-import 'package:untitled/screens/agentPage.dart';
+import 'package:untitled/screens/view/admin.dart';
+import 'package:untitled/screens/view/agentPage.dart';
 import 'package:untitled/screens/authentication/auth.dart';
 import 'package:untitled/screens/home/home.dart';
-import 'package:untitled/screens/authPage.dart';
+import 'package:untitled/screens/view/authPage.dart';
 
 class AuthController extends GetxController {
   static AuthController instance = Get.find();
@@ -32,11 +32,11 @@ class AuthController extends GetxController {
 
   _setInitialScreen(User user) {
     if (user == null) {
-      Get.offAll(AuthenticationScreen());
+      Get.offAll(() => AuthenticationScreen());
     } else {
       _initializeUserModel(user.uid);
 
-      Get.offAll(AuthPage());
+      Get.offAll(() => AuthPage());
     }
   }
 
