@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "614450109900",
+    "project_id": "trip-93ff9",
+    "storage_bucket": "trip-93ff9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614450109900:android:881f19c2234c5f34101169",
+        "android_client_info": {
+          "package_name": "com.santosenoque.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614450109900-i7vsnbnia2f2fmf54tunsolder4unqmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7KQUQa0u5D0XBzohh_Tz4YqNaYskma1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614450109900-i7vsnbnia2f2fmf54tunsolder4unqmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
