@@ -58,9 +58,7 @@ class SingleProductWidget extends StatelessWidget {
               SizedBox(
                 width: 30,
               ),
-              IconButton(
-                  icon: Icon(Icons.add_shopping_cart),
-                  onPressed: () {})
+              IconButton(icon: Icon(Icons.add_shopping_cart), onPressed: () {})
             ],
           ),
         ],

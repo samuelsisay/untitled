@@ -43,7 +43,6 @@ class AuthController extends GetxController {
 
   void signIn() async {
     try {
-      showLoading();
       await auth
           .signInWithEmailAndPassword(
               email: email.text.trim(), password: password.text.trim())
@@ -60,13 +59,11 @@ class AuthController extends GetxController {
         duration: Duration(seconds: 05),
         colorText: Colors.white,
       );
-      dismissLoadingWidget();
     }
   }
 
   void signUp() async {
     try {
-      showLoading();
       await auth
           .createUserWithEmailAndPassword(
               email: email.text.trim(), password: password.text.trim())
@@ -82,7 +79,6 @@ class AuthController extends GetxController {
           colorText: Colors.white,
           duration: Duration(seconds: 05));
     }
-    dismissLoadingWidget();
   }
 
   void signOut() async {
