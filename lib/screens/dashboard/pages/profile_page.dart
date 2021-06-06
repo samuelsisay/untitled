@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:untitled/constants/controllers.dart';
 import 'package:untitled/screens/dashboard/commons/my_info.dart';
 import 'package:untitled/screens/dashboard/commons/opaque_image.dart';
@@ -33,7 +34,7 @@ class ProfilePage extends StatelessWidget {
                             Align(
                               alignment: Alignment.center,
                               child: Text(
-                                authController.userModel.value.email ?? "",
+                                authController.userModel.value.name ?? "",
                                 textAlign: TextAlign.center,
                                 style: headingTextStyle,
                               ),
@@ -115,11 +116,7 @@ class ProfilePage extends StatelessWidget {
                           ),
                           GestureDetector(
                             onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => SuperLikesMePage(),
-                                ),
-                              );
+                              Get.offAll(() => SuperLikesMePage());
                             },
                             child: ProfileInfoBigCard(
                               firstText: "42",

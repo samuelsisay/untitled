@@ -9,7 +9,6 @@ import 'package:untitled/screens/view/agentPage.dart';
 import 'package:untitled/screens/authentication/auth.dart';
 import 'package:untitled/screens/home/home.dart';
 import 'package:untitled/screens/view/authPage.dart';
-import 'package:untitled/utils/helpers/showLoading.dart';
 
 class AuthController extends GetxController {
   static AuthController instance = Get.find();

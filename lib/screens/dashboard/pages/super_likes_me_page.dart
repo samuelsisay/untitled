@@ -88,6 +88,10 @@ class SuperLikesMePage extends StatelessWidget {
                   margin:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: ListTile(
+                    dense: true,
+                    onTap: () {
+                      //
+                    },
                     title: Text(
                       "Anne",
                       style: titleStyle,
