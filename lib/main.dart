@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled/controllers/createBannerContoller.dart';
 import 'package:untitled/screens/splash/splash.dart';
-
 import 'constants/firebase.dart';
 import 'controllers/appController.dart';
 import 'controllers/authController.dart';
