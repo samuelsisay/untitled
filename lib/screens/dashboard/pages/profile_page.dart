@@ -8,6 +8,7 @@ import 'package:untitled/screens/dashboard/pages/super_likes_me_page.dart';
 import 'package:untitled/screens/dashboard/styleguide/colors.dart';
 import 'package:untitled/screens/dashboard/styleguide/text_style.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled/screens/view/add_route.dart';
 
 class ProfilePage extends StatelessWidget {
   @override
@@ -70,13 +71,18 @@ class ProfilePage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          ProfileInfoBigCard(
-                            firstText: "21",
-                            secondText: "Unmatched me",
-                            icon: Image.asset(
-                              "assets/icons/sad_smiley.png",
-                              width: 32,
-                              color: blueColor,
+                          GestureDetector(
+                            onTap: () {
+                              Get.to(() => AddBusRoute());
+                            },
+                            child: ProfileInfoBigCard(
+                              firstText: "Add Bus Banner",
+                              secondText: "Unmatched me",
+                              icon: Image.asset(
+                                "assets/icons/sad_smiley.png",
+                                width: 32,
+                                color: blueColor,
+                              ),
                             ),
                           ),
                         ],

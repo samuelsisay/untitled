@@ -9,6 +9,7 @@ import 'package:untitled/screens/view/agentPage.dart';
 import 'package:untitled/screens/authentication/auth.dart';
 import 'package:untitled/screens/home/home.dart';
 import 'package:untitled/screens/view/authPage.dart';
+import 'package:untitled/utils/helpers/showLoading.dart';
 
 class AuthController extends GetxController {
   static AuthController instance = Get.find();
@@ -42,6 +43,7 @@ class AuthController extends GetxController {
 
   void signIn() async {
     try {
+      showLoading();
       await auth
           .signInWithEmailAndPassword(
               email: email.text.trim(), password: password.text.trim())
@@ -63,6 +65,7 @@ class AuthController extends GetxController {
 
   void signUp() async {
     try {
+      showLoading();
       await auth
           .createUserWithEmailAndPassword(
               email: email.text.trim(), password: password.text.trim())

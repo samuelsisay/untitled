@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled/screens/splash/splash.dart';
 import 'constants/firebase.dart';
-import 'controllers/appController.dart';
-import 'controllers/authController.dart';
+import 'controllers/controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,6 +10,7 @@ void main() async {
     (value) {
       Get.put(AppController());
       Get.put(AuthController());
+      Get.put(BannerContoller());
     },
   );
   runApp(MyApp());

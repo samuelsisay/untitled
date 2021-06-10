@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class ProductModel {
   static const ID = "id";
   static const IMAGE = "image";
@@ -20,4 +22,6 @@ class ProductModel {
     brand = data[BRAND];
     price = data[PRICE];
   }
+
+  static fromSnapshot(DocumentSnapshot doc) {}
 }
